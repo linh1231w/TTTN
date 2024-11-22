@@ -1,0 +1,20 @@
+/* CustomAdmin.css */
+
+/* Điều chỉnh chiều rộng của sidebar */
+.MuiDrawer-paper {
+    width: 250px; /* Kích thước tùy chỉnh */
+  }
+  
+  /* Điều chỉnh chiều rộng của phần nội dung chính */
+  .MuiBox-root {
+    padding: 24px;
+    width: calc(100% - 250px); /* Để phù hợp với chiều rộng sidebar */
+  }
+  
+  /* Điều chỉnh kích thước của các card */
+  .MuiCard-root {
+    width: 100%; /* Hoặc kích thước tùy chỉnh */
+    max-width: 1200px; /* Ví dụ kích thước tối đa */
+    margin: 0 auto; /* Căn giữa */
+  }
+  

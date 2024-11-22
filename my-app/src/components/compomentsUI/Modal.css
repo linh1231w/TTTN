@@ -1,0 +1,268 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Nền mờ đen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff; /* Nền trắng */
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 1200px;
+  height: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #000; /* Màu chữ đen */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modal-body {
+  display: flex;
+  height: 100%;
+}
+
+.modal-images {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.image-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-right: 1px solid #ddd; /* Đường viền xám nhạt */
+  overflow-y: auto;
+}
+
+.image-list::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.image-list {
+  scrollbar-width: none;
+}
+
+.image-list::-webkit-scrollbar {
+  -ms-overflow-style: none;
+}
+
+.image-item {
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.image-item.selected {
+  border: 2px solid #000; /* Viền đen khi chọn */
+}
+
+.image-item img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.main-image-container {
+  flex: 2;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+ 
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.image-nav-btn {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền mờ đen */
+  color: #fff; /* Màu chữ trắng */
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 28px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.modal-details {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.product-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #000; /* Màu chữ đen */
+}
+
+.product-price {
+  font-size: 22px;
+  color: #000; /* Màu chữ đen */
+  margin-bottom: 20px;
+}
+
+.product-description {
+  margin: 20px 0;
+  color: #333; /* Màu chữ xám đậm */
+}
+
+.product-options {
+  margin-bottom: 30px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.option label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #000; /* Màu chữ đen */
+}
+
+.option select {
+  padding: 12px;
+  border: 1px solid #ddd; /* Đường viền xám nhạt */
+  border-radius: 6px;
+  font-size: 16px;
+  color: #000; /* Màu chữ đen */
+  background-color: #fff; /* Nền trắng */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option select:focus {
+  border-color: #000; /* Đổi màu viền khi chọn thành đen */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: #000; /* Nền đen */
+  color: #fff; /* Màu chữ trắng */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #333; /* Nền xám đậm khi hover */
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+  border: 1px solid #ddd; /* Đường viền xám nhạt */
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 10px;
+  outline: none;
+}
+
+.quantity-input:focus {
+  border-color: #000; /* Đổi màu viền khi chọn thành đen */
+}
+
+.quantity-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000; /* Màu chữ đen */
+}
+
+.add-to-cart {
+  background-color: #000; /* Nền đen */
+  color: #fff; /* Màu chữ trắng */
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #333; /* Nền xám đậm khi hover */
+}
+
+.social-share {
+  display: flex;
+}
+
+.share-button {
+  margin-right: 10px;
+  color: #000; /* Màu chữ đen */
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-button[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: #000; /* Nền đen */
+  color: #fff; /* Màu chữ trắng */
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+                                    

@@ -1,0 +1,79 @@
+.product-image {
+    width: 100%;
+    
+}
+
+.no-image {
+    width: 100%;
+    height: 300px; /* Match the height of the images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    color: #888;
+}
+
+
+
+
+/* Product image container */
+.block2-pic {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 100%;
+    height: 400px; /* Increase the height */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Product hover image */
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Hover effect for product image */
+  .block2-pic:hover .product-image {
+    opacity: 0;
+  }
+  
+  .block2-pic:hover .hover-image {
+    opacity: 1;
+  }
+  
+
+  /* Quick view button */
+  .block2-btn {
+    display: none;
+  
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.925);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Quick view button hover effect */
+  .block2-btn:hover {
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .block2:hover .block2-btn {
+    display: block;
+}

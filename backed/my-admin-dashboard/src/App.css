@@ -1,0 +1,27 @@
+.site-layout-background {
+  background: #fff;
+}
+
+.logo {
+  height: 64px;
+  background: #001529;
+  color: #fff;
+  text-align: center;
+  line-height: 64px;
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.ant-layout-header {
+  background: #001529;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ant-menu-inline {
+  height: calc(100vh - 64px);
+  overflow: auto;
+}

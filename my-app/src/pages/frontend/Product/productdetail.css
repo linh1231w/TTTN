@@ -1,0 +1,161 @@
+.container1 {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo phần tử .left và .right nằm ở hai bên của container */
+    padding: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước container */
+   
+    max-width: 1400px; /* Kích thước tối đa của container chính */
+    margin: auto; /* Căn giữa container chính */
+  }
+  .flex1 {
+    display: flex;
+  }
+  
+  .left, .right {
+    width: 50%; /* Đặt chiều rộng cho các phần tử con */
+    padding: 20px;
+  }
+  
+  .main_image1 img {
+    width: 80%;
+    height: auto; /* Để giữ tỷ lệ khung hình */
+  }
+
+  
+  .option {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các hình ảnh nhỏ xuống dòng nếu cần thiết */
+  }
+  
+  .option img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    object-fit: cover; /* Để đảm bảo hình ảnh không bị biến dạng */
+  }
+  
+  .right {
+    padding: 20px 40px;
+  }
+  
+  h3 {
+    color: #201f1f;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  
+  h4 {
+    color: rgb(63, 60, 60);
+  }
+  
+  h5, p, small {
+    color: #837D7C;
+  }
+  
+  p {
+    margin: 20px 0 50px 0;
+    line-height: 25px;
+  }
+  
+  h5 {
+    font-size: 15px;
+  }
+  
+   
+  label,
+  .add span,
+  .color span {
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 50%;
+    margin: 20px 10px 20px 0;
+  }
+  
+  .color span:nth-child(2) {
+    background: #EDEDED;
+  }
+  
+  .color span:nth-child(3) {
+    background: #D5D6D8;
+  }
+  
+  .color span:nth-child(4) {
+    background: #EFE0DE;
+  }
+  
+  .color span:nth-child(5) {
+    background: #AB8ED1;
+  }
+  
+  .color span:nth-child(6) {
+    background: #F04D44;
+  }
+  
+  .add label,
+  .add span {
+    background: none;
+    border: 1px solid #C1908B;
+    color: #C1908B;
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  .add label {
+    padding: 10px 30px 0 20px;
+    border-radius: 50px;
+    line-height: 0;
+  }
+  
+  .button1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #080300;
+    color: white;
+    margin-top: 20%;
+    border-radius: 30px;
+  }
+
+  /* Hiệu ứng khi di chuột qua nút */
+.button1:hover {
+    background: #646261; /* Màu nền mới khi di chuột qua */
+    transform: scale(1.05); /* Phóng to nút một chút */
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 500px) {
+    .container1 {
+      flex-direction: column; /* Đặt các phần tử con theo cột trên màn hình nhỏ */
+    }
+  
+    .left, .right {
+      width: 100%; /* Đặt chiều rộng cho các phần tử con để chiếm toàn bộ chiều rộng của container */
+      padding: 10px;
+    }
+    .container1 {
+        flex-direction: column;
+      }
+  }
+  
+  @media only screen and (max-width: 511px) {
+    .container1 {
+      padding: 10px;
+    }
+  
+    .option img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .button1 {
+      padding: 8px;
+    }
+  }
+  

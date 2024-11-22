@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+/* src/index.css */
+
+/* CSS từ các file khác */
+
+
+/* CSS tùy chỉnh của bạn */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Thêm các kiểu dáng khác của bạn ở đây */
+
+html{
+  font-size: 62.5%;
+}

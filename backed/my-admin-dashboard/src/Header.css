@@ -1,0 +1,15 @@
+.site-layout-background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .site-layout-background h1 {
+    margin: 0;
+  }
+  
+  .site-layout-background .ant-btn {
+    display: flex;
+    align-items: center;
+  }
